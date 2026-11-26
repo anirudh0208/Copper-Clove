@@ -18,6 +18,7 @@
             </nav>
         </header>
 
+        <!-- Hero/home Section -->
         <section id="home" class="hero">
             <div class="hero-content">
                 <p class="hero-eyebrow">Wood-Fired Seasonal Kitchen</p>
@@ -30,5 +31,34 @@
                     <a href="#menu" class="btn btn-secondary">Explore Menu</a>
                 </div>
             </div>
+        </section>
+        
+        <!-- Menu Section -->
+        <section id="menu" class="menu-section">
+            <div class="section-header">
+                <p class="hero-eyebrow">Our Offerings</p>
+                <h2>Seasonal Menu</h2>
+            </div>
+            
+            <!-- Category filter buttons -->
+            <div class="filter-group">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="starters">Starters</button>
+                <button class="filter-btn" data-category="mains">Mains</button>
+                <button class="filter-btn" data-category="desserts">Desserts</button>
+            </div>
+
+            <!-- Dietary filter buttons -->
+            <div class="dietary-filters">
+                <span class="filter-label">Dietary Options:</span>
+                <button class="tag-btn" data-diet="veg">Veg</button>
+                <button class="tag-btn" data-diet="vegan">Vegan</button>
+                <button class="tag-btn" data-diet="gluten-free">Gluten-Free</button> 
+            </div>
+            
+            <!--JavaScript will add the menu-->
+            <div id="menu-grid" class="menu-grid"></div>
+        </section>
+        <script src="js/main.js"></script>
     </body>
 </html>

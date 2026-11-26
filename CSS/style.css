@@ -116,3 +116,90 @@ body {
 .btn-secondary:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
+
+/* 5. Menu Selection and filters */
+.menu-section {
+    padding:5rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.section-header h2 {
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.filter-group, .dietary-filters {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    align-items:center;
+    gap:0.75rem;    
+    margin-bottom:1.25rem;
+}
+
+.filter-label {
+    color:#3a3a3a;
+    font-size:0.9rem;
+}
+.tag-btn, .filter-btn {
+    background-color: rgba(255, 255, 255, 0.05);
+    color: var(--text-light);
+    border: 1px solid var(--boder-subtle);
+    padding: 0.5rem 1.2rem;
+    border-radius: 999px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    font-size: 0.9rem;
+}
+.tag-btn.active, .filter-btn.active{
+    background-color: var(--accent-copper);
+    color:#111111;
+    border-color: var(--accent-copper);
+    font-weight:600;
+}
+
+/*Menu cards (css grid)*/
+.menu-grid {
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap:1.5rem;
+    margin-top:2.5rem;
+}
+
+.menu-card {
+    background: rgba(255, 255, 255, 0.04);
+    border: 1px solid var(--boder-subtle);
+    border-radius: 10px;
+    padding: 1.5rem;
+    display:flex;
+    flex-direction:column;
+    justify-content:space-between;
+    gap:1rem;
+}
+.menu-card-header {
+    display:flex;
+    justify-content:space-between;
+    align-items:baseline;
+    gap: 1rem;
+}
+.menu-price {
+    color: var(--accent-copper);
+    font-weight: 600;   
+}
+.menu-desc {
+    color:#3a3a3a;
+    font-size:0.95rem;
+    gap: 0.5rem;
+}
+.diet-badge {
+    font-size:0.75rem;
+    padding:0.2rem 0.5rem;
+    border-radius: 999px;
+    color: var(--accent-copper);
+    background: rgba(217, 130, 54, 0.15);
+    border: 1px solid var(--accent-copper);
+}
